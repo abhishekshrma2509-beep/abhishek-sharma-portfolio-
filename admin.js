@@ -31,10 +31,10 @@ const DEFAULT_DATA = {
   skills: [
     { category: 'Languages', items: ['C', 'C++', 'Java', 'JavaScript', 'Dart'] },
     { category: 'Frontend', items: ['HTML', 'CSS', 'React', 'Flutter UI'] },
-    { category: 'Backend', items: ['Node.js', 'Firebase', 'REST API'] },
+    { category: 'Backend', items: ['Node.js', 'Firebase'] },
     { category: 'Databases', items: ['MySQL', 'MongoDB', 'Firestore'] },
     { category: 'Mobile', items: ['Flutter', 'Android', 'Firebase'] },
-    { category: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Figma'] }
+    { category: 'Tools', items: ['Git', 'GitHub', 'VS Code'] }
   ],
   projects: [
     {
@@ -44,10 +44,10 @@ const DEFAULT_DATA = {
       tags: ['Flutter', 'Firebase', 'BLE', 'QR Code']
     },
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack web application with React frontend and Node.js backend. Features include product catalog, shopping cart, payment integration and admin dashboard.',
-      image: 'assets/projects/ecommerce.png',
-      tags: ['React', 'Node.js', 'MongoDB', 'Stripe']
+      title: 'School ERP System(JackNJill School)',
+      description: 'It is a school ERP system which is used by teachers and parents to manage and view students data such as attendance,results,fees etc. ',
+      image: 'assets/projects/school.png',
+      tags: ['Flutter', 'Node.js', 'MongoDB', 'Cloudinary']
     }
   ],
   blogs: [
