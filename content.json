@@ -1,0 +1,83 @@
+{
+  "name": "Abhishek Sharma",
+  "title": "Full-Stack Developer",
+  "about": "I am a B.Sc Information Technology student with strong fundamentals in programming, web development and mobile application development. I enjoy building clean, scalable and real-world software solutions that solve actual problems. With experience in multiple tech stacks, I'm passionate about turning ideas into reality.",
+
+  "hero": {
+    "description": "Full-stack developer passionate about building modern web and mobile applications",
+    "tags": ["Web Dev", "Flutter", "Firebase"]
+  },
+
+  "skills": [
+    {
+      "category": "Languages",
+      "items": ["C", "C++", "Java", "JavaScript", "Dart"]
+    },
+    {
+      "category": "Frontend",
+      "items": ["HTML", "CSS", "React", "Flutter UI"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Firebase", "REST API"]
+    },
+    {
+      "category": "Databases",
+      "items": ["MySQL", "MongoDB", "Firestore"]
+    },
+    {
+      "category": "Mobile",
+      "items": ["Flutter", "Android", "Firebase"]
+    },
+    {
+      "category": "Tools",
+      "items": ["Git", "GitHub", "VS Code", "Figma"]
+    }
+  ],
+
+  "projects": [
+    {
+      "title": "Smart Attendance System",
+      "description": "Flutter + Firebase application using BLE & QR for secure attendance. Prevents proxy attendance and supports Excel export. Deployed to 500+ students.",
+      "image": "assets/projects/attendance.png",
+      "tags": ["Flutter", "Firebase", "BLE", "QR Code"]
+    },
+    {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack web application with React frontend and Node.js backend. Features include product catalog, shopping cart, payment integration and admin dashboard.",
+      "image": "assets/projects/ecommerce.png",
+      "tags": ["React", "Node.js", "MongoDB", "Stripe"]
+    },
+    {
+      "title": "Task Management App",
+      "description": "Cross-platform mobile application built with Flutter for managing daily tasks. Includes cloud sync, notifications, and team collaboration features.",
+      "image": "assets/projects/taskapp.png",
+      "tags": ["Flutter", "Firestore", "Push Notifications"]
+    }
+  ],
+
+  "blogs": [
+    {
+      "title": "Why Every IT Student Needs a Portfolio",
+      "description": "Importance of showcasing real-world projects to recruiters and how to build a strong portfolio that stands out.",
+      "date": "Feb 2026"
+    },
+    {
+      "title": "Using BLE in Attendance Systems",
+      "description": "How Bluetooth Low Energy improves automation, reduces fraud, and provides seamless user experience in modern attendance systems.",
+      "date": "Jan 2026"
+    },
+    {
+      "title": "Building Scalable APIs with Node.js",
+      "description": "Best practices and patterns for designing RESTful APIs that scale. Learn about middleware, error handling, and performance optimization.",
+      "date": "Dec 2025"
+    }
+  ],
+
+  "contact": {
+    "email": "abhishek.shrma2509@gmail.com",
+    "phone": "+91 8355855988",
+    "github": "https://github.com/abhishekshrma2509-beep",
+    "linkedin": "https://linkedin.com/in/abhishek-sharma-0626183b3"
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio Admin Panel">
+  <title>Portfolio Admin Panel</title>
+  
+  <link rel="stylesheet" href="./admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="login-page" class="page active">
+  <div class="login-container">
+    <div class="login-card">
+      <h1>Admin Panel</h1>
+      <p>Enter credentials to manage portfolio</p>
+      
+      <form id="login-form" class="login-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            placeholder="Enter username"
+            required
+          >
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Enter password"
+            required
+          >
+        </div>
+        
+        <div id="login-error" class="error-message"></div>
+        
+        <button type="submit" class="btn btn-primary">Login</button>
+        
+        <p class="login-hint">
+          📝 Default: admin / admin123
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- DASHBOARD PAGE -->
+<div id="dashboard-page" class="page">
+  <header class="admin-header">
+    <div class="header-content">
+      <h1>Portfolio Admin Dashboard</h1>
+      <button id="logout-btn" class="btn btn-secondary">Logout</button>
+    </div>
+  </header>
+
+  <div class="admin-container">
+    <!-- SIDEBAR NAVIGATION -->
+    <nav class="admin-sidebar">
+      <button class="nav-item active" data-section="hero">Hero Section</button>
+      <button class="nav-item" data-section="about">About</button>
+      <button class="nav-item" data-section="skills">Skills</button>
+      <button class="nav-item" data-section="projects">Projects</button>
+      <button class="nav-item" data-section="blogs">Blogs</button>
+      <button class="nav-item" data-section="contact">Contact</button>
+      
+      <div class="sidebar-footer">
+        <button id="preview-btn" class="btn btn-outline">Preview Site</button>
+        <button id="reset-btn" class="btn btn-danger">Reset All</button>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-content">
+      
+      <!-- HERO SECTION -->
+      <section id="section-hero" class="section-editor active">
+        <h2>Hero Section</h2>
+        <div class="editor-form">
+          <div class="form-group">
+            <label for="hero-name">Name</label>
+            <input type="text" id="hero-name" placeholder="Your name">
+          </div>
+          
+          <div class="form-group">
+            <label for="hero-desc">Hero Description</label>
+            <textarea id="hero-desc" placeholder="Short description"></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label>Floating Tags</label>
+            <div class="tag-inputs">
+              <input type="text" id="tag-1" class="tag-input" placeholder="Tag 1">
+              <input type="text" id="tag-2" class="tag-input" placeholder="Tag 2">
+              <input type="text" id="tag-3" class="tag-input" placeholder="Tag 3">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="section-about" class="section-editor">
+        <h2>About Me</h2>
+        <div class="editor-form">
+          <div class="form-group">
+            <label for="about-text">About Text</label>
+            <textarea id="about-text" placeholder="Write about yourself" rows="6"></textarea>
+            <small>Character count: <span id="about-count">0</span>/500</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="section-skills" class="section-editor">
+        <h2>Skills</h2>
+        <div class="editor-form">
+          <div id="skills-list" class="editable-list"></div>
+          <button type="button" class="btn btn-outline add-btn" data-add="skill">+ Add Skill Category</button>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="section-projects" class="section-editor">
+        <h2>Projects</h2>
+        <div class="editor-form">
+          <div id="projects-list" class="editable-list"></div>
+          <button type="button" class="btn btn-outline add-btn" data-add="project">+ Add Project</button>
+        </div>
+      </section>
+
+      <!-- BLOGS SECTION -->
+      <section id="section-blogs" class="section-editor">
+        <h2>Blogs / Articles</h2>
+        <div class="editor-form">
+          <div id="blogs-list" class="editable-list"></div>
+          <button type="button" class="btn btn-outline add-btn" data-add="blog">+ Add Blog</button>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="section-contact" class="section-editor">
+        <h2>Contact Information</h2>
+        <div class="editor-form">
+          <div class="form-group">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" placeholder="your@email.com">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-phone">Phone</label>
+            <input type="tel" id="contact-phone" placeholder="+1 (555) 123-4567">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-github">GitHub URL</label>
+            <input type="url" id="contact-github" placeholder="https://github.com/username">
+          </div>
+          
+          <div class="form-group">
+            <label for="contact-linkedin">LinkedIn URL</label>
+            <input type="url" id="contact-linkedin" placeholder="https://linkedin.com/in/username">
+          </div>
+        </div>
+      </section>
+
+      <!-- ACTION BUTTONS -->
+      <div class="editor-actions">
+        <button id="save-btn" class="btn btn-primary">Save Changes</button>
+        <button id="cancel-btn" class="btn btn-outline">Cancel</button>
+      </div>
+
+      <!-- SUCCESS MESSAGE -->
+      <div id="success-message" class="alert alert-success hidden">
+        ✓ Changes saved successfully!
+      </div>
+    </main>
+  </div>
+</div>
+
+<!-- SECURITY NOTICE (visible in browser console) -->
+<script>
+  console.log(`
+  ╔════════════════════════════════════════════════════════╗
+  ║  PORTFOLIO ADMIN PANEL - SECURITY NOTICE               ║
+  ╠════════════════════════════════════════════════════════╣
+  ║  ⚠️  This admin panel is for PERSONAL USE ONLY        ║
+  ║  ⚠️  NOT secure for production use                     ║
+  ║  ⚠️  Credentials visible in admin.js source code       ║
+  ║  ⚠️  All data stored in browser localStorage           ║
+  ║  ⚠️  No backend authentication                         ║
+  ║  ⚠️  No database encryption                            ║
+  ║                                                         ║
+  ║  This is designed for a static site on Render with    ║
+  ║  personal portfolio editing capabilities only.         ║
+  ╚════════════════════════════════════════════════════════╝
+  `);
+</script>
+
+<script src="./admin.js"></script>
+</body>
+</html>

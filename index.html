@@ -1,128 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Abhishek Sharma | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional portfolio of Abhishek Sharma - Full-stack developer">
+  <meta name="theme-color" content="#6366f1">
+  <title>Abhishek Sharma | Full-Stack Developer Portfolio</title>
+  
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAVIGATION -->
 <header class="navbar">
-  <h2>Abhishek</h2>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#blogs">Blogs</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="navbar-container">
+    <div class="nav-logo" id="nav-name">Abhishek</div>
+    <nav class="nav-menu">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#blogs" class="nav-link">Blogs</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <!-- HERO SECTION -->
-<section class="hero-modern">
+<section id="home" class="hero">
   <div class="hero-container">
-
-    <!-- LEFT CONTENT -->
-    <div class="hero-text">
-      <h1>
-        <span>ABHISHEK SHARMA</span><br>
-      </h1>
-
-      <p>
-        I’m a B.Sc IT student passionate about
-        web, app development and real-world software solutions.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="assets/resume.pdf" download class="btn primary">Download CV</a>
-        <a href="#projects" class="btn secondary">View Projects</a>
+    <!-- LEFT: TEXT CONTENT -->
+    <div class="hero-content">
+      <div class="hero-text-wrapper">
+        <h1 class="hero-title">
+          Hi, I'm <span class="accent" id="hero-name">Abhishek</span>
+        </h1>
+        <p class="hero-subtitle" id="hero-desc"></p>
+        <div class="hero-buttons">
+          <a href="assets/resume.pdf" download class="btn btn-primary">Download CV</a>
+          <a href="#projects" class="btn btn-secondary">View My Work</a>
+        </div>
       </div>
     </div>
-
-    <!-- RIGHT IMAGE -->
-    <div class="hero-image">
-      <img src="assets/profile.png" alt="Abhishek Sharma">
-      <span class="float-tag tag1">Web Dev</span>
-      <span class="float-tag tag2">Flutter</span>
-      <span class="float-tag tag3">Firebase</span>
+    
+    <!-- RIGHT: PROFILE IMAGE & TAGS -->
+    <div class="hero-visual">
+      <div class="profile-image">
+        <img src="./assets/profile.png" alt="Abhishek Sharma Profile" loading="lazy">
+      </div>
+      <div class="floating-tags">
+        <span class="tag floating-tag tag-1" id="tag1"></span>
+        <span class="tag floating-tag tag-2" id="tag2"></span>
+        <span class="tag floating-tag tag-3" id="tag3"></span>
+      </div>
     </div>
-
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section reveal">
-  <h2>About Me</h2>
-  <p>
-    I am a B.Sc Information Technology student with strong fundamentals in
-    programming, web development and mobile application development.
-    I enjoy building clean, scalable and real-world software solutions.
-  </p>
+<!-- ABOUT SECTION -->
+<section id="about" class="section section-light reveal">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <p id="about-text" class="about-description"></p>
+    </div>
+  </div>
 </section>
 
-<!-- SKILLS -->
+<!-- SKILLS SECTION -->
 <section id="skills" class="section reveal">
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card">C / C++ / Java</div>
-    <div class="card">HTML, CSS, React</div>
-    <div class="card">Flutter, Android</div>
-    <div class="card">Node.js, Firebase</div>
-    <div class="card">MySQL, MongoDB</div>
-    <div class="card">Git & GitHub</div>
+  <div class="container">
+    <h2 class="section-title">Skills & Expertise</h2>
+    <div class="skills-grid" id="skills-grid"></div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section reveal">
-  <h2>Projects</h2>
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section section-light reveal">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-container" id="projects-container"></div>
+  </div>
+</section>
 
-  <div class="project-card">
-    <img src="assets/projects/attendance.png" alt="Project">
-    <div>
-      <h3>Smart Attendance System</h3>
-      <p>
-        Flutter + Firebase application using BLE & QR for secure attendance.
-        Prevents proxy attendance and supports Excel export.
-      </p>
+<!-- BLOGS SECTION -->
+<section id="blogs" class="section reveal">
+  <div class="container">
+    <h2 class="section-title">Latest Articles</h2>
+    <div class="blogs-grid" id="blogs-container"></div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section section-light reveal">
+  <div class="container contact-container">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-content">
+      <p class="contact-subtitle">I'd love to hear from you. Feel free to reach out!</p>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label">Email:</span>
+          <a id="email" href="mailto:"></a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Phone:</span>
+          <a id="phone" href="tel:"></a>
+        </div>
+        <div class="contact-links">
+          <a id="github" href="#" target="_blank" rel="noopener" class="social-link">GitHub</a>
+          <a id="linkedin" href="#" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- BLOGS -->
-<section id="blogs" class="section reveal">
-  <h2>Blogs</h2>
-
-  <div class="blog-card">
-    <h3>Why Every IT Student Needs a Portfolio</h3>
-    <p>Importance of showcasing real-world projects to recruiters.</p>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 <span id="footer-name">Abhishek Sharma</span>. All rights reserved. | <a href="./admin.html" style="color: inherit; opacity: 0.6; text-decoration: none; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'">Admin</a></p>
   </div>
-
-  <div class="blog-card">
-    <h3>Using BLE in Attendance Systems</h3>
-    <p>How Bluetooth Low Energy improves automation.</p>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section reveal">
-  <h2>Contact</h2>
-  <p>Email: abhishek.shrma2509@gmail.com</p>
-  <p>Phone: +91 8355855988</p>
-  <p>
-    <a href="https://github.com/abhishekshrma2509-beep" target="_blank">GitHub</a> |
-    <a href="https://linkedin.com/in/abhishek-sharma-0626183b3" target="_blank">LinkedIn</a>
-  </p>
-</section>
-
-<footer>
-  © 2026 Abhishek Sharma
 </footer>
 
-<script src="script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
