@@ -45,7 +45,7 @@
     {
       "title": "School ERP System(JackNJill School)",
       "description": "It is a school ERP system which is used by teachers and parents to manage and view students data such as attendance,results,fees etc. ",
-      "image": "assets/projects/ecommerce.png",
+      "image": "assets/projects/school.png",
       "tags": ["Flutter", "Node.js", "MongoDB", "Cloudinary"]
     },
   ],
