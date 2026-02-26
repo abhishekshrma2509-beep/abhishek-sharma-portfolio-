@@ -19,7 +19,7 @@
     },
     {
       "category": "Backend",
-      "items": ["Node.js", "Firebase", "REST API"]
+      "items": ["Node.js", "Firebase"]
     },
     {
       "category": "Databases",
@@ -31,7 +31,7 @@
     },
     {
       "category": "Tools",
-      "items": ["Git", "GitHub", "VS Code", "Figma"]
+      "items": ["Git", "GitHub", "VS Code"]
     }
   ],
 
@@ -43,17 +43,11 @@
       "tags": ["Flutter", "Firebase", "BLE", "QR Code"]
     },
     {
-      "title": "E-Commerce Platform",
-      "description": "Full-stack web application with React frontend and Node.js backend. Features include product catalog, shopping cart, payment integration and admin dashboard.",
+      "title": "School ERP System(JackNJill School)",
+      "description": "It is a school ERP system which is used by teachers and parents to manage and view students data such as attendance,results,fees etc. ",
       "image": "assets/projects/ecommerce.png",
-      "tags": ["React", "Node.js", "MongoDB", "Stripe"]
+      "tags": ["Flutter", "Node.js", "MongoDB", "Cloudinary"]
     },
-    {
-      "title": "Task Management App",
-      "description": "Cross-platform mobile application built with Flutter for managing daily tasks. Includes cloud sync, notifications, and team collaboration features.",
-      "image": "assets/projects/taskapp.png",
-      "tags": ["Flutter", "Firestore", "Push Notifications"]
-    }
   ],
 
   "blogs": [
